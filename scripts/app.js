@@ -1,19 +1,17 @@
 
 const $ = document
 
+const sidebarContainer = $.querySelector('.sidebar')
 const sidebarBottom = $.querySelector('.sidebar-bottom')
 
 sidebarBottom.addEventListener('click' , e =>{
     if(e.target.classList.contains('dark')){
-        console.log('dark');
-        
+        sidebarContainer.className = 'sidebar'
     }
     if(e.target.classList.contains('night')){
-        console.log('night');
-        
+        sidebarContainer.className = 'sidebar night'  
     }
     if(e.target.classList.contains('light')){
-        console.log('light');
-        
+        sidebarContainer.className = 'sidebar light'
     }
 })
