@@ -105,3 +105,25 @@
         margin-right: 0;
     }
 }
+
+
+
+.sidebar.night{
+    background-color: #312e81;
+    color: #b4bbc7;
+}
+.sidebar-center .list .list-item.night:hover,
+.sidebar-center .list .list-item.night.active{
+    background-color: #4338ca;
+}
+
+
+.sidebar.light{
+    background-color: #f3f4f6;
+    color: #111827;
+}
+.sidebar-center .list .list-item.light:hover,
+.sidebar-center .list .list-item.light.active{
+    background-color: #d1d5db;
+    color: #111827;
+}
