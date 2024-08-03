@@ -42,3 +42,29 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+
+.sidebar-center .list{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-center .list .list-item{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.sidebar-center .list .list-item:hover,
+.sidebar-center .list .list-item.active{
+    background-color: #374151;
+    color: #fff;
+}
+.sidebar-center .list .list-item .list-item-icon{
+    width: 30px;
+    font-size: 20px;
+}
