@@ -1,7 +1,107 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 *{
     margin: 0;
+    /* padding: 0;
+    box-sizing: border-box; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar{
+    width: 180px;
+    min-height: 100vh;
+    background-color: #111827;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-top,
+.sidebar-center,
+.sidebar-bottom{
+    width: 80%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4b4b4b;
+}
+
+.sidebar-bottom{
+    border: none;
+    justify-content: center;
+}
+
+.sidebar-top .logo{
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.sidebar-top .brand{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.sidebar-center .list{
+    list-style: none;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.sidebar-center .list .list-item{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.sidebar-center .list .list-item:hover,
+.sidebar-center .list .list-item.active{
+    background-color: #374151;
+    color: #fff;
+}
+.sidebar-center .list .list-item .list-item-icon{
+    width: 30px;
+    font-size: 20px;
+}
+
+.sidebar-bottom .color-box{
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(202, 191, 191);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.sidebar-bottom .dark{
+    background-color: #111827;
+}
+.sidebar-bottom .night{
+    background-color: #312e81;
+}
+.sidebar-bottom .light{
+    background-color: #f3f4f6;
+}
+
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+        width: 50px;
+    }
+    .brand,.list-item-text{
+        
+        display: none;
+    }
+    .sidebar-bottom{
+        flex-direction: column;
+    }
+    .sidebar-bottom .color-box{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
 }
