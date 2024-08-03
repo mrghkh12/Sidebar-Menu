@@ -5,3 +5,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.sidebar{
+    width: 180px;
+    height: 100vh;
+    background-color: #111827;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
